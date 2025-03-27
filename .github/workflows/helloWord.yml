@@ -14,9 +14,9 @@ on:
   workflow_dispatch:
     inputs:
       run-condition:
-      description: 'Condition on run job'
-      required: true
-      default: 'default'
+        description: 'Condition on run job'
+        required: true
+        default: 'default'
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
