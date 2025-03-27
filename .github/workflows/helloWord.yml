@@ -44,4 +44,8 @@ jobs:
         if: github.event_name=='pull_request'
         run: 
           echo pull request executed.
+      - name: workflow_dispatch statement
+        if: github.event_name=='workflow_dispatch' && github.event.inputs.run-condition==default
+          echo this is workflow_dispatch request
+      
       
