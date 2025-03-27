@@ -1,0 +1,10 @@
+name: customized control
+  on:
+    workflow_dispatch:
+  JOBS:
+    default:
+      runs-on: ubuntu-latest
+      steps:
+        -uses: actions/checkout@v4
+        -name: oneline statement
+        -run: echo Hello word
