@@ -36,21 +36,21 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
-        run:
+        run: |
           echo Add other actions to build,
           echo test, and deploy your project.
           
       # Conditional Statement
-      - name: conditional statement 1
-        if: github.event_name=='push'
+      - name: push condition
+        if: ${{github.event_name=='push'}}
         run:
           echo Push Request executed.
-      - name: conditional statement 2
-        if: github.event_name=='pull_request'
+      - name: pull condition
+        if: ${{github.event_name=='pull_request'}}
         run: 
           echo pull request executed.
       - name: workflow_dispatch statement
-        if: github.event_name=='workflow_dispatch' && github.event.inputs.run-condition=='default'
+        if: ${{github.event_name=='workflow_dispatch' && github.event.inputs.run-condition=='default'}}
         run:
           echo this is workflow_dispatch request
       
