@@ -36,10 +36,11 @@ jobs:
           echo test, and deploy your project.
           
       # Conditional Statement
-      - name: conditional statement
+      - name: conditional statement 1
         if: github.event_name=='push'
         run:
           echo Push Request executed.
+      - name: conditional statement 2
         if: github.event_name=='pull_request'
         run: 
           echo pull request executed.
