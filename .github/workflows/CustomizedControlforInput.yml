@@ -1,4 +1,4 @@
-name: customized control
+name: customizedControl
 on:
   workflow_dispatch:
   JOBS:
