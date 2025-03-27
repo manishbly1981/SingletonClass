@@ -5,7 +5,7 @@ name: test
 # Controls when the workflow will run
 on:
   schedule:
-    - cron: '00 17 * * *'
+    - cron: '00 12 * * *'
   push:
     branches: [ "main" ]
   pull_request:
