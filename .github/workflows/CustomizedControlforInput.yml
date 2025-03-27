@@ -1,6 +1,6 @@
 name: customized control
-  on:
-    workflow_dispatch:
+on:
+  workflow_dispatch:
   JOBS:
     default:
       runs-on: ubuntu-latest
