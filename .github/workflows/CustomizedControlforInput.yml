@@ -12,7 +12,7 @@ on:
       browser:
         description:  "select browser type"
         required:  true
-        type:  checkboxes
+        type:  choice
         options:
           - chrome
           - edge
@@ -34,4 +34,4 @@ jobs:
     steps:
       -  uses: actions/checkout@v4
       -  name: oneline statement
-         run: echo Hello word updated
+         run: echo Hello world updated
