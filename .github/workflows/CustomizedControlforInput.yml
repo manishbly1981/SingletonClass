@@ -13,6 +13,7 @@ on:
         description:  "select browser type"
         required:  true
         type:  checkboxes
+          options:
           - chrome
           - edge
           - firefox
@@ -20,12 +21,13 @@ on:
         description:  "Select Test Type"
         required:  true
         type:  choice
+          options:
           - Regression
           - Sanity
       custom_type:
         description:  "Enter custom value"
         required:  true
-        type:  String
+        type:  string
 jobs:
   default:
     runs-on: ubuntu-latest
