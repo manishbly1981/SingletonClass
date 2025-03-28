@@ -34,4 +34,10 @@ jobs:
     steps:
       -  uses: actions/checkout@v4
       -  name: oneline statement
-         run: echo Hello world updated
+         run: |
+           echo Hello world updated
+           echo github.event.inputs.environment
+           echo github.event.inputs.browser
+           echo github.event.inputs.test_type
+           echo github.event.inputs.costom_type
+         
