@@ -10,22 +10,22 @@ on:
           - dev
           - pre
       browser:
-        description: "select browser type"
-        required: true
-        type: checkboxes
+        description:  "select browser type"
+        required:  true
+        type:  checkboxes
           - chrome
           - edge
           - firefox
       test_type:
-        description: "Select Test Type"
-        required: true
-        type: choice
+        description:  "Select Test Type"
+        required:  true
+        type:  choice
           - Regression
           - Sanity
       custom_type:
-        description: "Enter custom value"
-        required: true
-        type: String
+        description:  "Enter custom value"
+        required:  true
+        type:  String
 jobs:
   default:
     runs-on: ubuntu-latest
